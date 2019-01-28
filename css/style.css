@@ -21,6 +21,24 @@ body {
 a {
   text-decoration: none; }
 
+.header-primary--main {
+  display: block;
+  font-size: 4.8rem;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 2rem; }
+
+.header-primary--sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 2rem; }
+
+.header-primary--action {
+  font-size: 1.6rem;
+  font-weight: 700; }
+
 .text-center {
   text-align: center; }
 
@@ -33,18 +51,22 @@ a {
 .mb-2 {
   margin-bottom: 1.5rem; }
 
-a.btn, .btn {
+.btn {
   border-radius: 5px;
-  padding: 1rem 1.2rem;
+  padding: 1.2rem 2.6rem;
   background-color: #eee;
   outline: none;
   vertical-align: middle;
   color: #fff;
+  display: inline-block;
+  white-space: nowrap;
   transition: all .2s ease-out; }
-  a.btn-primary, .btn-primary {
+  .btn-nav {
+    padding: 1rem 1.2rem; }
+  .btn-primary {
     background: #3bb75e;
     color: #fff; }
-    a.btn-primary:hover, .btn-primary:hover {
+    .btn-primary:hover {
       background-color: #27a34a;
       transform: translateY(-2px); }
 
@@ -56,6 +78,10 @@ a.btn, .btn {
   border-style: solid;
   border-width: .5rem;
   border-color: #011b33 transparent transparent transparent; }
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto; }
 
 .row {
   max-width: 114rem;
@@ -86,9 +112,21 @@ a.btn, .btn {
 
 .header {
   height: 100vh;
-  background-color: #f1fef4;
+  background: #f1fef4 url(../img/map.svg);
   width: 100%;
   position: relative; }
+  .header-body {
+    background-color: #f1fef4;
+    width: 60%;
+    height: 100vh; }
+  .header-text-box {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    padding: 0 3rem;
+    margin-left: 4rem; }
+    .header-text-box--home {
+      z-index: 2; }
 
 .navbar {
   padding: 1.2rem 4.8rem;
@@ -97,12 +135,12 @@ a.btn, .btn {
   .navbar-main {
     display: flex;
     justify-content: space-between;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 100; }
   .navbar-green--trans {
-    background-color: rgba(241, 254, 244, 0.5); }
+    background-color: rgba(241, 254, 244, 0.8); }
   .navbar-brand {
     display: inline-flex;
     margin-right: 2.4rem;
