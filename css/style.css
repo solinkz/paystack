@@ -9,7 +9,17 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: #011b33; }
+
+body {
+  font-family: 'lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #011b33; }
+
+a {
+  text-decoration: none; }
 
 .text-center {
   text-align: center; }
@@ -22,6 +32,30 @@ body {
 
 .mb-2 {
   margin-bottom: 1.5rem; }
+
+a.btn, .btn {
+  border-radius: 5px;
+  padding: 1rem 1.2rem;
+  background-color: #eee;
+  outline: none;
+  vertical-align: middle;
+  color: #fff;
+  transition: all .2s ease-out; }
+  a.btn-primary, .btn-primary {
+    background: #3bb75e;
+    color: #fff; }
+    a.btn-primary:hover, .btn-primary:hover {
+      background-color: #27a34a;
+      transform: translateY(-2px); }
+
+.dropdown-caret::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 2px;
+  border-style: solid;
+  border-width: .5rem;
+  border-color: #011b33 transparent transparent transparent; }
 
 .row {
   max-width: 114rem;
@@ -49,3 +83,59 @@ body {
     width: calc(2 * ((100% - 3 * 6rem) /4) +  6rem); }
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 6rem) /4) + 2* (6rem)); }
+
+.header {
+  height: 100vh;
+  background-color: #f1fef4;
+  width: 100%;
+  position: relative; }
+
+.navbar {
+  padding: 1.2rem 4.8rem;
+  width: 100%;
+  display: flex; }
+  .navbar-main {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100; }
+  .navbar-green--trans {
+    background-color: rgba(241, 254, 244, 0.5); }
+  .navbar-brand {
+    display: inline-flex;
+    margin-right: 2.4rem;
+    line-height: 1;
+    height: 4rem;
+    align-items: center; }
+    .navbar-brand img {
+      height: 2.5rem; }
+  .navbar-nav--left, .navbar-nav--right {
+    display: flex;
+    align-items: center; }
+  .navbar-nav--menu {
+    list-style-type: none; }
+    .navbar-nav--menu li {
+      display: inline-flex;
+      height: 4rem;
+      align-items: center; }
+    .navbar-nav--menu a {
+      text-decoration: none;
+      color: #011b33;
+      font-size: 1.5rem;
+      font-weight: 700;
+      position: relative;
+      padding-right: 2rem; }
+      .navbar-nav--menu a:hover {
+        color: #09a5db; }
+      .navbar-nav--menu a.btn-primary {
+        background-color: #3bb75e;
+        color: #fff; }
+        .navbar-nav--menu a.btn-primary:hover {
+          background-color: #27a34a;
+          color: #fff; }
+      .navbar-nav--menu a .flag-icon {
+        height: 1.2rem; }
+      .navbar-nav--menu a.dropdown-caret:hover::after {
+        border-color: #09a5db transparent transparent transparent; }

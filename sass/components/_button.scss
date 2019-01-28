@@ -1,0 +1,20 @@
+a.btn, .btn{
+    border-radius: 5px;
+    padding: 1rem 1.2rem;
+    background-color: $color-light-grey;
+    outline: none;
+    vertical-align: middle;
+    color: $color-white;
+
+    transition: all .2s ease-out;
+
+    &-primary{
+        background: $color-secondary;
+        color: $color-white;
+
+        &:hover{
+            background-color: $color-secondary-dark;
+            transform: translateY(-2px); 
+        }
+    }
+}
