@@ -1,5 +1,5 @@
 .header{
-    height: 100vh;
+    height: 110vh;
     background: $color-green-light url(../img/map.svg);
     width: 100%;
     position: relative;
@@ -7,7 +7,7 @@
     &-body{
         background-color: $color-green-light;
         width: 60%;
-        height: 100vh;
+        height: 110vh;
     }
     &-text-box{
         position: absolute;
@@ -15,10 +15,64 @@
         left: 0;
         padding: 0 3rem;
         margin-left: 4rem;
+        transition: .3s ease-out;
+        animation: moveInBottom .7s ease-out;
 
         &--home{
            
             z-index: 2;
         }
+    }
+
+    &-bottom{
+        padding: 0 3rem;
+        margin:0 4rem;
+        margin-top: -10rem;
+        margin-bottom: 2rem;
+        
+
+        &--left, &--right{
+            width: 50%;
+            float: left;
+        }
+
+        &--left{
+            p{
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+
+            .logo-item--header{
+                &:not(:last-child){
+                    margin-right: 2rem;
+                }
+            }
+            
+        }
+
+        &--right{
+            text-align: right;
+            padding-left: 6rem;
+
+            .video-link{
+                display: flex;
+                align-items: center;
+
+                &--text{
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                }
+
+                &--btn{
+                    margin-left: 1rem;
+                }
+
+                &:hover .btn{
+                    transform: scale(1.1);
+                    box-shadow: 0  0 1rem rgba($color-black, .15);
+                }
+            }
+        }
+        
     }
 }

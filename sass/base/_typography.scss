@@ -1,7 +1,7 @@
 body{
     font-family: 'lato', sans-serif;
     font-weight: 400;
-    line-height: 1.7;
+    line-height: 1.5;
     color: $color-primary;
 }
 
@@ -9,6 +9,14 @@ a{
     text-decoration: none;
 }
 
+p{
+    font-size: 1.9rem;
+    line-height: 1.5;
+}
+p.sub-heading{
+    font-size: 2rem;
+    font-weight: 400;
+}
 .header-primary{
     &--main{
         display: block;
@@ -28,4 +36,14 @@ a{
         font-size: $default-font-size;
         font-weight: 700;
     }
+}
+
+.heading-secondary{
+    font-size: 4.5rem;
+    font-weight: 900;
+}
+
+.heading-tertiary{
+    font-size: 3.6rem;
+    font-weight: 700;
 }

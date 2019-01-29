@@ -1,0 +1,12 @@
+.logo{
+    margin: 1rem 0;
+
+    &-box{
+     display: flex;
+     justify-content: space-between;
+    }
+
+    &-item{
+        height: 3rem;
+    }
+}

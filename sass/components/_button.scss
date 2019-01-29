@@ -4,9 +4,11 @@
     background-color: $color-light-grey;
     outline: none;
     vertical-align: middle;
+    border: none;
     color: $color-white;
     display: inline-block;
     white-space: nowrap;
+    cursor: pointer;
 
     transition: all .2s ease-out;
 
@@ -22,5 +24,22 @@
             background-color: $color-secondary-dark;
             transform: translateY(-2px); 
         }
+    }
+    &-circle{
+        width: 4rem;
+        height: 4rem;
+        padding: 0 !important;
+        border-radius: 50%;
+    }
+}
+
+.video-link--btn{
+
+    .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-primary-light;
+        color: $color-white;
     }
 }
