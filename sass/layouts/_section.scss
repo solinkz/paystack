@@ -1,3 +1,53 @@
 .page-section{
-    padding: 11rem 3rem;
+    padding: 14rem 6rem;
+   
+
+    &--header{
+        margin-bottom: 10rem;
+    }
+    &--white{
+        background-color: $color-white;
+    }
+    &--body{
+        width: 100%;
+        position: relative;
+
+        .page-category{
+            
+            &--media{
+                padding: 3rem 0;
+                img{
+                    width: 100%;
+                }
+            }
+
+            &--body{
+                padding: 0 4rem 0 3rem;
+            }
+            &--text{
+                padding: 0 3rem;
+                margin-bottom: 7rem;
+                h3{
+                    margin-bottom: 2rem;
+                }
+                p{
+                    line-height: 1.5;
+                }
+            }
+            
+            &--list{
+                display: flex;
+                position: relative;
+                justify-content: space-between;
+                margin-top: 4rem;
+                padding-right: 4rem;
+            }
+            &--link{
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+
 }

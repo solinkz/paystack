@@ -31,6 +31,24 @@
         padding: 0 !important;
         border-radius: 50%;
     }
+
+    &-link{
+        background-color: transparent !important;
+        font-weight: 500;
+        padding: 0;
+
+        &--icon{
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            border-radius: 50%;
+            margin-right: .5rem;
+        }
+    }
+    &-primary.btn-link{
+        color: $color-secondary !important;
+
+    }
 }
 
 .video-link--btn{
