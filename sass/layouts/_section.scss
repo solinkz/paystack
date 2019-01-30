@@ -1,28 +1,65 @@
 .page-section{
     padding: 14rem 6rem;
-   
+    position: relative;
 
     &--header{
         margin-bottom: 10rem;
     }
-    &--white{
-        background-color: $color-white;
+    // &--white{
+    //     background-color: $color-white;
+        
+    // }
+    &--blue{
+        background-color: $color-blue;
+        
+    }
+    &--greyish{
+        background-color: $color-greyish;
+        
+    }
+    &--pattern-background{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+    }
+    &--check-background{
+      
+        background-image: url(../img/checked-pattern-blue.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        opacity: .06;
+    }
+    &--circular-background{
+      
+        background-image: url(../img/circular-pattern.png);
+        background-size: 70rem;
+        background-repeat: no-repeat;
+        background-position-x: 120%;
+        opacity: .5;
+        filter: grayscale(1);
+       
     }
     &--body{
         width: 100%;
         position: relative;
 
         .page-category{
-            
+            margin-bottom: 12rem;
             &--media{
-                padding: 3rem 0;
                 img{
+                    width: 100%;
+                    padding: 3rem 0;
+                }
+                video{
                     width: 100%;
                 }
             }
 
             &--body{
-                padding: 0 4rem 0 3rem;
+                padding: 0 3rem 0 3rem;
             }
             &--text{
                 padding: 0 3rem;
@@ -45,6 +82,8 @@
             &--link{
                 display: flex;
                 align-items: center;
+                margin-top: 4rem;
+                
             }
         }
     }

@@ -1,0 +1,26 @@
+.testimonial-header{
+    width: 100%;
+}
+
+.testimonial-author{
+    display: flex;
+    align-items: center;
+
+    &--img{
+        max-height: 4rem;
+        margin-right: 1.2rem;
+        img{
+            max-height: 100%;
+            border-radius: 50%;
+        }
+    }
+    &--name{
+        font-weight: 700;
+        font-size: 1.9px;
+        margin-bottom: 1.5rem;
+    }
+
+    &--position{
+
+    }
+}
