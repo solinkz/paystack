@@ -1,5 +1,13 @@
 .testimonial-header{
     width: 100%;
+
+    &--img{
+        height: 3rem;
+
+        img{
+            max-height: 100%;
+        }
+    }
 }
 
 .testimonial-author{
@@ -7,7 +15,7 @@
     align-items: center;
 
     &--img{
-        max-height: 4rem;
+        height: 5rem;
         margin-right: 1.2rem;
         img{
             max-height: 100%;
@@ -16,11 +24,24 @@
     }
     &--name{
         font-weight: 700;
-        font-size: 1.9px;
-        margin-bottom: 1.5rem;
+        font-size: 1.7rem;
+        margin-bottom: .5rem;
     }
 
     &--position{
+        font-size: 1.2rem;
+    }
+}
 
+.sign-in{
+    // &--text{
+    //     display: flex;
+    //     align-items: center;
+    // }
+    &--btn{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 10rem;
     }
 }

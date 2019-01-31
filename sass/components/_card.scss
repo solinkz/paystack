@@ -5,11 +5,14 @@
     width: 100%;
     border-radius: .5rem;
     transition: all .3s;
-    max-height: 50rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 40rem;
+    
+    &-testimonial{
+        height: 35rem;
+    }
     &:hover{
         box-shadow: 0 4px 1rem rgba($color-black, .15);
         transform: translateY(-1px);    

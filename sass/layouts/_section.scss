@@ -5,10 +5,10 @@
     &--header{
         margin-bottom: 10rem;
     }
-    // &--white{
-    //     background-color: $color-white;
+    &--white{
+        background-color: $color-white;
         
-    // }
+    }
     &--blue{
         background-color: $color-blue;
         
@@ -31,6 +31,14 @@
         background-size: 100% 100%;
         background-repeat: no-repeat;
         opacity: .06;
+    }
+    &--curved-background{
+      
+        background-image: url(../img/curved-pattern.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        opacity: .09;
+        z-index: -1;
     }
     &--circular-background{
       

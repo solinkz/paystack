@@ -71,6 +71,12 @@ p.sub-heading {
 .text-center {
   text-align: center; }
 
+.m-0 {
+  margin: 0 !important; }
+
+.mb-0 {
+  margin-bottom: 0 !important; }
+
 .mb-8 {
   margin-bottom: 8rem; }
 
@@ -156,11 +162,12 @@ p.sub-heading {
   width: 100%;
   border-radius: .5rem;
   transition: all .3s;
-  max-height: 50rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 40rem; }
+  .card-testimonial {
+    height: 35rem; }
   .card:hover {
     box-shadow: 0 4px 1rem rgba(0, 0, 0, 0.15);
     transform: translateY(-1px); }
@@ -387,6 +394,8 @@ p.sub-heading {
   position: relative; }
   .page-section--header {
     margin-bottom: 10rem; }
+  .page-section--white {
+    background-color: #fff; }
   .page-section--blue {
     background-color: #eaf6fc; }
   .page-section--greyish {
@@ -403,6 +412,12 @@ p.sub-heading {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     opacity: .06; }
+  .page-section--curved-background {
+    background-image: url(../img/curved-pattern.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: .09;
+    z-index: -1; }
   .page-section--circular-background {
     background-image: url(../img/circular-pattern.png);
     background-size: 70rem;
@@ -442,17 +457,29 @@ p.sub-heading {
 
 .testimonial-header {
   width: 100%; }
+  .testimonial-header--img {
+    height: 3rem; }
+    .testimonial-header--img img {
+      max-height: 100%; }
 
 .testimonial-author {
   display: flex;
   align-items: center; }
   .testimonial-author--img {
-    max-height: 4rem;
+    height: 5rem;
     margin-right: 1.2rem; }
     .testimonial-author--img img {
       max-height: 100%;
       border-radius: 50%; }
   .testimonial-author--name {
     font-weight: 700;
-    font-size: 1.9px;
-    margin-bottom: 1.5rem; }
+    font-size: 1.7rem;
+    margin-bottom: .5rem; }
+  .testimonial-author--position {
+    font-size: 1.2rem; }
+
+.sign-in--btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 10rem; }
